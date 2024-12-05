@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Fanglu Sun's Personal Page"
+title                    : "Fanglu Sun/Xi'an Jiaotong-Liverpool University"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -26,7 +26,7 @@ author:
   pronouns         :  "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Shanghai"
-  employer         : "Xi'an Jiaotong-Livepool University"
+  employer         : "XJTLU"
   uri              : # URL
   email            : "Fanglu.Sun@xjtlu.edu.cn" 
 

@@ -11,5 +11,8 @@ main:
   - title: "教学"
     url: /zh/teaching/
 
+  - title: "博客"
+    url: /zh/year-archive/
+
   - title: "简历"
     url: /zh/cv/

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>安理会第10228次会议：人工智能与国际安全</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --paper: #fffdf8;
+      --ink: #1c1915;
+      --muted: #5c564c;
+      --line: #ddd6c8;
+      --accent: #1f3d5c;
+      --accent-ink: #f7f4ee;
+      --warn-bg: #f8efe2;
+      --warn-line: #c4a574;
+      --info-bg: #e8eef3;
+      --info-line: #8aa0b5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Songti SC", sans-serif;
+      line-height: 1.65;
+    }
+    main { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+    header p { margin: 0; }
+    .kicker {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+    h1 { font-size: 32px; line-height: 1.3; font-weight: 650; margin: 0 0 12px; }
+    h2 { font-size: 22px; margin: 40px 0 12px; }
+    .sub, .source { color: var(--muted); }
+    .source { font-size: 14px; margin-top: 8px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 28px 0;
+    }
+    .stat, .card, .callout, .table-wrap, .steps li {
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+    .stat { padding: 16px; }
+    .stat b { display: block; font-size: 28px; line-height: 1.2; }
+    .stat span { color: var(--muted); font-size: 14px; }
+    .callout { padding: 16px 18px; margin: 0 0 16px; }
+    .callout.warn { background: var(--warn-bg); border-color: var(--warn-line); }
+    .callout.info { background: var(--info-bg); border-color: var(--info-line); }
+    .callout strong { display: block; margin-bottom: 4px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .card { padding: 16px 18px; }
+    .card h3 { margin: 0 0 8px; font-size: 16px; }
+    .card p { margin: 0; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 12px 0; }
+    button, input {
+      font: inherit;
+      color: inherit;
+    }
+    .filters button {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    .filters button[aria-pressed="true"] {
+      background: var(--accent);
+      color: var(--accent-ink);
+      border-color: var(--accent);
+    }
+    input[type="search"] {
+      border: 1px solid var(--line);
+      background: var(--paper);
+      padding: 7px 10px;
+      min-width: 220px;
+    }
+    .count { color: var(--muted); font-size: 14px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; min-width: 760px; }
+    th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    th { font-size: 13px; color: var(--muted); font-weight: 600; background: #f7f3eb; }
+    tr:last-child td { border-bottom: 0; }
+    td:first-child { font-weight: 600; width: 22%; }
+    td:nth-child(2) { width: 12%; white-space: nowrap; }
+    .steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .steps li { padding: 14px 16px; }
+    .steps b { display: block; }
+    footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+    a { color: var(--accent); }
+    @media (max-width: 800px) {
+      h1 { font-size: 26px; }
+      .stats, .cards { grid-template-columns: 1fr; }
+      main { padding: 24px 16px 48px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="kicker">联合国安全理事会 </p>
+      <h1>安理会第10228次会议：人工智能与国际安全</h1>
+      <p class="source"><a href="/blog/security-council-10228-artificial-intelligence-and-international-security/">English</a></p>
+    </header>
+
+    <section class="stats" aria-label="会议规模">
+      <div class="stat"><b>19</b><span>发言方（4名简报人 + 15个理事国）</span></div>
+      <div class="stat"><b>15</b><span>理事国全部发言</span></div>
+      <div class="stat"><b>3</b><span> 立场裂痕</span></div>
+    </section>
+
+    <section class="callout warn">
+      <strong>这场会真正卡住的问题</strong>
+      各方几乎都承认人工智能有好处。卡住的是：谁有权决定前沿模型前进的速度，风险由谁承担，以及这件事该不该由安全理事会来处理。
+    </section>
+
+    <section class="cards" aria-label="三条裂痕">
+      <article class="card">
+        <h3>裂痕一 · 前沿速度</h3>
+        <p>科学小组与部分实验室要求安全证据领先于能力。美国拒绝暂停和全球限速。若干南方国家同意风险跨国，但拒绝由少数公司和国家规定谁必须慢下来。</p>
+      </article>
+      <article class="card">
+        <h3>裂痕二 · 平台选择</h3>
+        <p>一方要把失控、生物滥用和致命自主武器留在安理会视野里。另一方坚持专门机构、国内法和政府间共识，防止安理会变成技术监管机关。</p>
+      </article>
+      <article class="card">
+        <h3>裂痕三 · 谁被排除</h3>
+        <p>灾难性风险话语如果只由前沿国家规定，会被读成新的技术门槛。获取、生产、开源和矿产价值链因此成为安全问题，而不只是发展问题。</p>
+      </article>
+    </section>
+
+    <h2>发言方焦点</h2>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="按裂痕筛选">
+        <button type="button" data-lens="all" aria-pressed="true">全部发言方</button>
+        <button type="button" data-lens="frontier" aria-pressed="false">前沿风险与速度</button>
+        <button type="button" data-lens="forum" aria-pressed="false">安理会该不该管</button>
+        <button type="button" data-lens="sovereignty" aria-pressed="false">主权与反全球规制</button>
+        <button type="button" data-lens="equity" aria-pressed="false">获取、生产与南方</button>
+      </div>
+      <input id="query" type="search" placeholder="搜索发言方或关键词" aria-label="搜索发言方或关键词">
+    </div>
+    <section class="callout info" id="reading">
+      <strong id="reading-title"></strong>
+      <span id="reading-body"></span>
+    </section>
+    <p class="count" id="count"></p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>发言方</th>
+            <th>位置</th>
+            <th>主要焦点</th>
+            <th>偏好工具</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+
+    <footer>同一行为体可出现在多条裂痕中。来源：第10228次会议记录。</footer>
+  </main>
+  <script>
+    // 发言方数据：裂痕标签用于筛选，文字与画布一致。
+    const actors = [
+      { name: "Yoshua Bengio（独立国际科学小组联席主席）", kind: "科学简报", lenses: ["frontier", "forum"], focus: "灾难性滥用、权力集中、失控。竞赛是公司选择，不是自然法则。", instrument: "独立科学评估、事件定义与通报、前沿模型许可、责任保险。" },
+      { name: "Sam Altman（OpenAI）", kind: "前沿实验室", lenses: ["frontier", "sovereignty"], focus: "两条失败路径：失控（含递归自我改进）与权力过度集中。拒绝极端乐观或末日叙事。", instrument: "国家与国际互补的能力、风险与人类监督标准；事故分级通报；政府间安全渠道。" },
+      { name: "Dario Amodei（Anthropic）", kind: "前沿实验室", lenses: ["frontier", "forum"], focus: "生物武器等滥用，以及能力超过开发者控制。认为此事属于安理会，而不只是经济或信通部门。", instrument: "给前沿减速而非停摆；实验室嵌入外部评估员；窄协议（禁止用人工智能制造生物武器）；核查与事故通报。" },
+      { name: "Clément Delangue（Hugging Face）", kind: "开源产业", lenses: ["frontier", "equity"], focus: "最大风险是能力不对称：攻防之间、少数公司与其余世界之间。反对恐惧叙事。", instrument: "强制共享智能体完整轨迹；用开源装备防御方。闭源防护可能挡住防御者、挡不住攻击者。" },
+      { name: "法国 · Jean-Noël Barrot（主席，以外长身份发言）", kind: "召集国", lenses: ["frontier", "forum", "equity"], focus: "技术已进入国际和平与安全。三类安全风险：失控、两用扩散（网络、生物、化学、虚假信息）、致命自主武器。另提金融泡沫、就业与能源水资源。", instrument: "部署前及全周期独立评估、事故透明、内外部监督、公司法律责任。开放模型是信任来源。类比原子能机构与不扩散条约。支持芬兰、挪威本周呼吁。" },
+      { name: "英国 · Ed Miliband", kind: "理事国", lenses: ["frontier", "forum"], focus: "创建者已经警告不能单靠公司防止灾难。保护国民是政府首要职责，不能外包。", instrument: "安全测试与保证体系、政府对实验室的可见性、网络与关键基础设施韧性。人工智能安全研究所；明年二十国集团主席国推动一套全球原则。" },
+      { name: "丹麦 · Lars Løkke Rasmussen", kind: "理事国", lenses: ["frontier", "forum", "equity"], focus: "维和、核查与预警是机会；前沿模型与失去人类控制是风险。支持芬兰、挪威呼吁。", instrument: "全球治理、对大型科技公司的规制、军事领域的人类控制与问责。科学小组作为共同证据基准。治理不得扩大数字鸿沟。" },
+      { name: "拉脱维亚常驻代表", kind: "理事国", lenses: ["frontier", "forum"], focus: "两类风险必须分开：国家与非国家行为体滥用，以及模型错位和失控。后者会加重归因与误判。", instrument: "独立评估、安全规程、多利益攸关方。提议安理会非正式专家组，承接法、拉、巴林、希腊的非正式互动对话。人工智能必须处于人的指导、监督和控制之下。" },
+      { name: "希腊 · Christos Dermentzopoulos", kind: "理事国", lenses: ["forum", "sovereignty"], focus: "危机中的决策压缩，以及把人工智能接入核指挥控制。速度不能替代判断。", instrument: "国际人道法与人权法下的人类责任。安理会理解和平与安全含义，不制定技术规则、不重复其他机构。依托既有军事人工智能讨论与建立信任措施。" },
+      { name: "巴林 · Abdullah bin Ali Al Khalifa", kind: "理事国", lenses: ["forum", "equity"], focus: "恐怖与犯罪集团滥用；自主性上升时，只有人具备理性、责任与对复杂情境的分辨。同时肯定预警、调解与维和用途。", instrument: "王储此前主张缔结治理人工智能的国际条约。安理会应更定期、系统讨论，并与全联合国的测试框架衔接。推动技术转让。" },
+      { name: "美国 · Michael Kratsios", kind: "理事国", lenses: ["sovereignty", "frontier"], focus: "继续推进其称为超级智能的前沿，使之有利于公民自由。拒绝因风险而暂停，也拒绝新的全球治理结构。", instrument: "国内测试、网络安全协调和既有执法工具。各国自行立法。主权来自采用与本国能力，而不是全球监管者。以出口计划帮助伙伴建设基础设施。" },
+      { name: "俄罗斯联邦代表", kind: "理事国", lenses: ["forum", "sovereignty", "equity"], focus: "一般性人工智能议题与安理会《宪章》任务的对应关系不清。安理会南方代表性不足，存在西方以安全话语固化技术领先的风险。人工智能也有精度、态势感知和保护平民的用途。", instrument: "网络攻击交信通技术安全机制，军事问题交《特定常规武器公约》致命自主武器政府专家组（三周前已有共识报告）。人类控制的具体形式由各国在国内决定。对话须共识、包容、政府间，并保证非歧视获取。" },
+      { name: "哥伦比亚常驻代表", kind: "理事国", lenses: ["frontier", "sovereignty", "equity"], focus: "首次在安理会记录“机器犯罪”。真正要约束的是机器的自主设计与自主开发，而不是人类创新。部分同意美国：凌驾各国主权生产的国际机构不现实。", instrument: "至少就“保持为人控制、不允许机器建造下一代人工智能”形成共同界限。全球南方要参与生产，购买和适配不能替代生产能力。关注量子叠加之前的窗口。" },
+      { name: "巴基斯坦 · Mohammad Ishaq Dar", kind: "理事国", lenses: ["equity", "frontier", "forum"], focus: "人类判断必须保留在设计、部署和未来能力边界上。防止人工智能成为军备竞赛的新侧面。以安全为名的限速，不能变成把他人挡在门外。", instrument: "军事克制与建立信任，防止误判和决策压缩。问题应放在联合国普遍参与的论坛，欢迎全球治理对话，并以创始成员加入中国倡议的世界人工智能合作组织。" },
+      { name: "中国常驻代表", kind: "理事国", lenses: ["equity", "sovereignty", "forum"], focus: "发展与安全并重。各国有权按本国需要选择技术。反对技术“小圈子”、选边和数字霸权。开源与开放生态。", instrument: "联合国作为主要论坛，提高南方代表权。军事应用须审慎，最终决策权留给人，反对无差别攻击平民。世界人工智能合作组织、五年内五千个培训名额、面向区域组织的应用合作中心。" },
+      { name: "索马里 · Ali Mohamed Omar", kind: "理事国", lenses: ["equity", "frontier"], focus: "非洲缺算力、连接、专家和监管能力，且可能只成为数据来源和试验场。外语训练的模型会误写非洲语境，合成内容可干扰和平进程和选举。", instrument: "强制事故报告、分层技术防护、独立审计；越过议定能力阈值则暂停部署。与非盟及泛非人工智能举措合作。联合国应是主平台，反对由少数先进国家与公司碎片化定规。" },
+      { name: "刚果（金）· Thérèse Kayikwamba Wagner", kind: "理事国", lenses: ["equity", "forum"], focus: "冲突中的无人机和监控已是现实，同一技术可用于停火观察，也可用于侦察和宣传。人工智能价值链是物质的：能源、基础设施和战略性自然资源。", instrument: "国家法律框架、公司的部署前评估与可追溯、科学家与民间社会的独立评估。治理必须覆盖价值链上的共享繁荣，否则资源国被排斥会反过来制造不稳定。安理会做预判，不取代技术规则机构。" },
+      { name: "巴拿马 · Javier Martínez Acha Vásquez", kind: "理事国", lenses: ["frontier", "equity"], focus: "风险已出现在安理会议程相关情形：非国家行为体用人工智能做火箭和导弹制导，以及有限人类干预下的选靶。生命攸关的决定不能还原为统计结果。", instrument: "结构化、持续的风险、事故与良好做法信息交换。领导人必须能看懂建议从何而来、误差有多大。发展须让全球南方参与并受益。" },
+      { name: "利比里亚 · Lewis Garseedah Brown II", kind: "理事国", lenses: ["forum", "equity", "frontier"], focus: "避开两个极端：扼杀南方所需创新的过度监管，以及相信技术可以自我监管。前沿风险已是政策现实。", instrument: "架构阶段即安全内嵌；致命武力不得交给算法；协调的威胁披露与透明红队测试；可核查的独立审计。支持安理会人工智能与新兴技术非正式工作组。南方应是标准的共同设计者。" }
+    ];
+
+    // 每个筛选按钮对应的说明。点击后更换，不刷新页面。
+    const readings = {
+      all: { title: "先看裂痕，再看国别", body: "十五个理事国全部发言。分歧不按常任理事国自然对齐。行业内部也不一致：科学小组要许可，OpenAI 要可比较的证据标准，Anthropic 要给前沿减速并嵌入检查员，Hugging Face 认为闭源防护扩大了攻防不对称。" },
+      frontier: { title: "这一镜片：谁有权决定前沿走多快", body: "Bengio 要求证明安全后才能训练和部署。Amodei 呼吁全行业调速。Altman 承认必须能证明可控，但强调本公司可以单方面放慢，标准不能锁死在位者。美国拒绝把放慢写成全球规则。巴基斯坦同意风险由所有人承担，但警告由少数人设定速度、再用限制拖住其余国家，安全议程就会变成技术排斥。" },
+      forum: { title: "这一镜片：职权之争", body: "法国把事项放进安理会，因为失控、两用和致命自主武器已经触及和平与安全。英国、丹麦、巴林、拉脱维亚和利比里亚支持安理会持续参与，后两者还提出非正式专家组或工作组。希腊划出边界：理解影响，不制定技术法、不重复其他机构。俄罗斯认为一般性议题不属于安理会，应回到致命自主武器政府专家组和信通技术机制。美国接受对话，拒绝讨论滑向全球治理。刚果（金）和希腊接近：安理会做安全预判，技术细则留给专门机构。" },
+      sovereignty: { title: "这一镜片：拒绝一个全球监管者，理由并不相同", body: "美国的理由是创新主权和国内民主问责，并指责“全球主义控制方案”。俄罗斯的理由是安理会代表性不足、专门机构已有共识、军事控制形式应由各国规定。哥伦比亚部分同意“国际机构凌驾主权生产不现实”，但仍要求各国共同决定机器能否自主设计下一代系统。中国主张数字主权和反对选边，同时要求联合国成为主要治理论坛，这与美国“不要国际机构”不是同一立场。" },
+      equity: { title: "这一镜片：安全规则的分配后果", body: "索马里称之为数字殖民风险：算力、数据、评估工具和规则都在别处。刚果（金）把问题延伸到矿产与价值链。哥伦比亚强调生产权，而不只是购买和采用。中国用能力建设、开源和世界人工智能合作组织来组织这一诉求。Hugging Face 从防御一侧支持开源。美国的替代方案是伙伴采用美国技术栈，把主权定义为应用能力。" }
+    };
+
+    const rows = document.querySelector("#rows");
+    const buttons = document.querySelectorAll(".filters button");
+    const query = document.querySelector("#query");
+    const params = new URLSearchParams(location.search);
+    let lens = params.get("lens") && readings[params.get("lens")] ? params.get("lens") : "all";
+    if (params.get("q")) query.value = params.get("q");
+
+    function cell(text) {
+      const td = document.createElement("td");
+      td.textContent = text;
+      return td;
+    }
+
+    function visibleActors() {
+      const q = query.value.trim().toLowerCase();
+      return actors.filter((actor) => {
+        const inLens = lens === "all" || actor.lenses.includes(lens);
+        const blob = (actor.name + actor.kind + actor.focus + actor.instrument).toLowerCase();
+        return inLens && (q === "" || blob.includes(q));
+      });
+    }
+
+    function render() {
+      const list = visibleActors();
+      const reading = readings[lens];
+      document.querySelector("#reading-title").textContent = reading.title;
+      document.querySelector("#reading-body").textContent = reading.body;
+      document.querySelector("#count").textContent = "当前显示 " + list.length + " 个发言方。";
+      rows.replaceChildren();
+      list.forEach((actor) => {
+        const tr = document.createElement("tr");
+        tr.append(cell(actor.name), cell(actor.kind), cell(actor.focus), cell(actor.instrument));
+        rows.append(tr);
+      });
+      if (list.length === 0) {
+        const tr = document.createElement("tr");
+        const td = cell("没有符合当前筛选和搜索的发言方。");
+        td.colSpan = 4;
+        tr.append(td);
+        rows.append(tr);
+      }
+    }
+
+    function markPressed() {
+      buttons.forEach((item) => item.setAttribute("aria-pressed", String(item.dataset.lens === lens)));
+    }
+
+    buttons.forEach((button) => {
+      button.addEventListener("click", () => {
+        lens = button.dataset.lens;
+        const next = new URL(location.href);
+        if (lens === "all") next.searchParams.delete("lens");
+        else next.searchParams.set("lens", lens);
+        history.replaceState(null, "", next);
+        markPressed();
+        render();
+      });
+    });
+    query.addEventListener("input", render);
+    markPressed();
+    render();
+  </script>
+</body>
+</html>

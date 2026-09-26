@@ -14,3 +14,7 @@ Fanglu Sun is Deputy Head of the Department of International Studies and Assista
 Her research interests are quantitative and big data methods, Chinese foreign policy analysis, the Global South, and international organizations. She received her Ph.D. in Political Science from Rice University in 2016.
 
 A full record of positions, publications, talks, and grants is on the [CV](/cv/) page. Journal articles are also listed under [Publications](/publications/).
+
+Recent writing
+======
+[Security Council, 10228th meeting: Artificial intelligence and international security](/blog/security-council-10228-artificial-intelligence-and-international-security/)

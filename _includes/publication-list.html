@@ -1,0 +1,30 @@
+{% comment %}
+  只列出与当前页面语言相同的论文。中文页使用 title_zh 作为分类标题。
+{% endcomment %}
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% assign item_lang = post.lang | default: "en" %}
+      {% if post.category != category[0] or item_lang != page.lang %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        {% if page.lang == "zh" %}
+          <h2>{{ category[1].title_zh | default: category[1].title }}</h2><hr />
+        {% else %}
+          <h2>{{ category[1].title }}</h2><hr />
+        {% endif %}
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% assign item_lang = post.lang | default: "en" %}
+    {% if item_lang == page.lang %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+{% endif %}

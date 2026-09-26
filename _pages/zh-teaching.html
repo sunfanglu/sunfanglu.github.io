@@ -1,13 +1,18 @@
 ---
 layout: archive
-title: "Teaching"
-permalink: /teaching/
+title: "教学"
+permalink: /zh/teaching/
 author_profile: true
-lang: en
+lang: zh
 lang_ref: teaching
 ---
 
 {% include base_path %}
+
+{% assign teaching_here = site.teaching | where: "lang", "zh" %}
+{% if teaching_here.size == 0 %}
+  <p>（待填写）</p>
+{% endif %}
 
 {% for post in site.teaching reversed %}
   {% assign item_lang = post.lang | default: "en" %}

@@ -9,6 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Fanglu Sun's Personal Page"
+title_zh                 : "Fanglu Sun 的个人主页" # 中文页眉站点名；未使用中文姓名
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
@@ -23,10 +24,14 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Fanglu Sun"
-  pronouns         :  "she/her"  
+  pronouns         :  "she/her"
+  pronouns_zh      : "她"
   bio              : "An assitant professor from Xi'an Jiaotong Livepool University (XJTLU)"
+  bio_zh           : "西交利物浦大学（XJTLU）助理教授"
   location         : "Shanghai"
+  location_zh      : "上海"
   employer         : "XJTLU"
+  employer_zh      : "西交利物浦大学"
   uri              : # URL
   email            : "Fanglu.Sun@xjtlu.edu.cn" 
 
@@ -78,10 +83,13 @@ author:
 publication_category:
   books:
     title: 'Books'
+    title_zh: '著作'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
+    title_zh: '期刊论文'
   conferences:
     title: 'Conference Papers'
+    title_zh: '会议论文'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -229,6 +237,7 @@ collections:
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
+  # lang 缺省为英文。中文内容在文件开头写 lang: zh，并可用 lang_ref 与英文页配对。
   - scope:
       path: ""
       type: posts
@@ -239,6 +248,7 @@ defaults:
       comments: true
       share: true
       related: true
+      lang: en
   # _pages
   - scope:
       path: ""
@@ -246,6 +256,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      lang: en
   # _teaching
   - scope:
       path: ""
@@ -255,6 +266,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      lang: en
   # _publications
   - scope:
       path: ""
@@ -264,6 +276,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      lang: en
   # _portfolio
   - scope:
       path: ""
@@ -273,6 +286,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      lang: en
   # _talks
   - scope:
       path: ""
@@ -281,6 +295,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      lang: en
 
 
 # Sass/SCSS

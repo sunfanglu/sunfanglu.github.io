@@ -1,14 +1,18 @@
 ---
 layout: archive
-title: "Portfolio"
-permalink: /portfolio/
+title: "作品"
+permalink: /zh/portfolio/
 author_profile: true
-lang: en
+lang: zh
 lang_ref: portfolio
 ---
 
 {% include base_path %}
 
+{% assign portfolio_here = site.portfolio | where: "lang", "zh" %}
+{% if portfolio_here.size == 0 %}
+  <p>（待填写）</p>
+{% endif %}
 
 {% for post in site.portfolio %}
   {% assign item_lang = post.lang | default: "en" %}
@@ -16,4 +20,3 @@ lang_ref: portfolio
     {% include archive-single.html %}
   {% endif %}
 {% endfor %}
-

@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "论文"
+permalink: /zh/publications/
+author_profile: true
+lang: zh
+lang_ref: publications
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">也可以在 <a href="{{ site.author.googlescholar }}">Google Scholar</a> 查看论文。</div>
+{% endif %}
+
+{% include base_path %}
+
+{% assign pubs_here = site.publications | where: "lang", "zh" %}
+{% if pubs_here.size == 0 %}
+  <p>（待填写）</p>
+{% endif %}
+
+{% include publication-list.html %}

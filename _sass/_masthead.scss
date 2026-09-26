@@ -55,4 +55,10 @@
     padding-right: 2em;
     font-weight: 700;
   }
+
+  /* 语言开关跟在导航最后，和栏目链接分开 */
+  &--lang {
+    margin-left: 0.5em;
+    font-weight: 700;
+  }
 }

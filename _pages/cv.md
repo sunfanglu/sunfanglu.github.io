@@ -3,6 +3,8 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
+lang: en
+lang_ref: cv
 redirect_from:
   - /resume
 ---
@@ -44,19 +46,28 @@ Skills
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
+    {% assign item_lang = post.lang | default: "en" %}
+    {% if item_lang == page.lang %}
+      {% include archive-single-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
   
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+    {% assign item_lang = post.lang | default: "en" %}
+    {% if item_lang == page.lang %}
+      {% include archive-single-talk-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
   
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
+    {% assign item_lang = post.lang | default: "en" %}
+    {% if item_lang == page.lang %}
+      {% include archive-single-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
   
 Service and leadership

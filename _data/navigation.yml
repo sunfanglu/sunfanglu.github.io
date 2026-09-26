@@ -1,4 +1,5 @@
 # The following is the order of the links in the header of the website.
+# 中文顶栏在 _data/navigation_zh.yml，两项的顺序应保持对应。
 #
 # Changing the order here will adjust the order and you can also add additional
 # links. Removing a link prevents it from showing in the header, but does not

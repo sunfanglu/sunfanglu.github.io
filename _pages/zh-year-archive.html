@@ -1,15 +1,19 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Blog posts"
+permalink: /zh/year-archive/
+title: "博客"
 author_profile: true
-lang: en
+lang: zh
 lang_ref: blog
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
 {% include base_path %}
+
+{% assign posts_here = site.posts | where: "lang", "zh" %}
+{% if posts_here.size == 0 %}
+  <p>（待填写）</p>
+{% endif %}
+
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% assign item_lang = post.lang | default: "en" %}

@@ -17,7 +17,8 @@ author_profile: true
     {% endif %}
   {% endunless %}
   {% for post in collection.docs %}
-    {% unless collection.output == false or collection.label == "posts" %}
+    {% assign item_lang = post.lang | default: "en" %}
+    {% unless collection.output == false or collection.label == "posts" or item_lang != page.lang %}
       {% include archive-single.html %}
     {% endunless %}
   {% endfor %}

@@ -1,0 +1,66 @@
+{% comment %}
+  根据当前页的 lang 和 lang_ref，找到另一种语言的对应页。
+  页眉传入 output:nav，会输出一个切换链接；
+  head 传入 output:links，会输出 hreflang。
+  找不到配对页时，退回到该语言的同一栏目；再没有栏目时退回首页。
+{% endcomment %}
+{% include base_path %}
+
+{% assign active_lang = page.lang | default: "en" %}
+{% if active_lang == "zh" %}
+  {% assign switch_lang = "en" %}
+  {% assign switch_label = "English" %}
+  {% assign switch_home = "/" %}
+{% else %}
+  {% assign switch_lang = "zh" %}
+  {% assign switch_label = "中文" %}
+  {% assign switch_home = "/zh/" %}
+{% endif %}
+
+{% assign switch_path = switch_home %}
+{% if page.lang_ref %}
+  {% assign lang_pool = site.pages | concat: site.posts | concat: site.publications | concat: site.talks | concat: site.teaching | concat: site.portfolio %}
+  {% assign lang_matches = lang_pool | where: "lang_ref", page.lang_ref | where: "lang", switch_lang %}
+  {% if lang_matches.size > 0 %}
+    {% assign switch_path = lang_matches.first.url %}
+  {% endif %}
+{% elsif page.collection == "publications" %}
+  {% if switch_lang == "zh" %}
+    {% assign switch_path = "/zh/publications/" %}
+  {% else %}
+    {% assign switch_path = "/publications/" %}
+  {% endif %}
+{% elsif page.collection == "talks" %}
+  {% if switch_lang == "zh" %}
+    {% assign switch_path = "/zh/talks/" %}
+  {% else %}
+    {% assign switch_path = "/talks/" %}
+  {% endif %}
+{% elsif page.collection == "teaching" %}
+  {% if switch_lang == "zh" %}
+    {% assign switch_path = "/zh/teaching/" %}
+  {% else %}
+    {% assign switch_path = "/teaching/" %}
+  {% endif %}
+{% elsif page.collection == "portfolio" %}
+  {% if switch_lang == "zh" %}
+    {% assign switch_path = "/zh/portfolio/" %}
+  {% else %}
+    {% assign switch_path = "/portfolio/" %}
+  {% endif %}
+{% elsif page.collection == "posts" %}
+  {% if switch_lang == "zh" %}
+    {% assign switch_path = "/zh/year-archive/" %}
+  {% else %}
+    {% assign switch_path = "/year-archive/" %}
+  {% endif %}
+{% endif %}
+
+{% if include.output == "links" %}
+  <link rel="alternate" hreflang="{{ active_lang }}" href="{{ page.url | prepend: base_path }}">
+  <link rel="alternate" hreflang="{{ switch_lang }}" href="{{ switch_path | prepend: base_path }}">
+{% else %}
+  <li class="masthead__menu-item masthead__menu-item--lang">
+    <a href="{{ switch_path | prepend: base_path }}" hreflang="{{ switch_lang }}" lang="{{ switch_lang }}">{{ switch_label }}</a>
+  </li>
+{% endif %}

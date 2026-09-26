@@ -1,20 +1,32 @@
 {% include base_path %}
 
+{% comment %} 中文页使用中文站名、中文导航，并链回中文首页。{% endcomment %}
+{% if page.lang == "zh" %}
+  {% assign nav_links = site.data.navigation_zh.main %}
+  {% assign brand_title = site.title_zh | default: site.title %}
+  {% assign brand_url = "/zh/" %}
+{% else %}
+  {% assign nav_links = site.data.navigation.main %}
+  {% assign brand_title = site.title %}
+  {% assign brand_url = "/" %}
+{% endif %}
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% for link in site.data.navigation.main %}
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ brand_url | prepend: base_path }}">{{ brand_title }}</a></li>
+          {% for link in nav_links %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
-              {% else %}
+            {% else %}
               {% assign domain = base_path %}
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
+          {% include language-switch.html %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>

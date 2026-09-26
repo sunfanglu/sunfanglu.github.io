@@ -1,16 +1,17 @@
 ---
 layout: archive
-title: "Talks and presentations"
-permalink: /talks/
+title: "演讲"
+permalink: /zh/talks/
 author_profile: true
-lang: en
+lang: zh
 lang_ref: talks
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+{% assign talks_here = site.talks | where: "lang", "zh" %}
+{% if talks_here.size == 0 %}
+  <p>（待填写）</p>
 {% endif %}
 
 {% for post in site.talks reversed %}

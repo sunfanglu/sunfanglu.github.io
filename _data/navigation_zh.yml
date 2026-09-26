@@ -1,0 +1,24 @@
+# 中文页顶栏。顺序和英文版 _data/navigation.yml 对应。
+# 新增栏目时，两边都要加一项，并给页面写上相同的 lang_ref。
+
+main:
+  - title: "论文"
+    url: /zh/publications/
+
+  - title: "演讲"
+    url: /zh/talks/
+
+  - title: "教学"
+    url: /zh/teaching/
+
+  - title: "作品"
+    url: /zh/portfolio/
+
+  - title: "博客"
+    url: /zh/year-archive/
+
+  - title: "简历"
+    url: /zh/cv/
+
+  - title: "指南"
+    url: /zh/markdown/

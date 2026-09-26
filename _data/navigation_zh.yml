@@ -11,14 +11,5 @@ main:
   - title: "教学"
     url: /zh/teaching/
 
-  - title: "作品"
-    url: /zh/portfolio/
-
-  - title: "博客"
-    url: /zh/year-archive/
-
   - title: "简历"
     url: /zh/cv/
-
-  - title: "指南"
-    url: /zh/markdown/

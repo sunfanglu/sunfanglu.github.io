@@ -13,9 +13,18 @@ lang_ref: talks
 
 {% endif %}
 
+<h2>Invited talks</h2>
 {% for post in site.talks reversed %}
   {% assign item_lang = post.lang | default: "en" %}
-  {% if item_lang == page.lang %}
+  {% if item_lang == page.lang and post.talk_group == "invited" %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Conference presentations</h2>
+{% for post in site.talks reversed %}
+  {% assign item_lang = post.lang | default: "en" %}
+  {% if item_lang == page.lang and post.talk_group == "conference" %}
     {% include archive-single-talk.html %}
   {% endif %}
 {% endfor %}

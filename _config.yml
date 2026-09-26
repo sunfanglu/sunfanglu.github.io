@@ -11,8 +11,8 @@ locale                   : "en-US"
 title                    : "Fanglu Sun's Personal Page"
 title_zh                 : "Fanglu Sun 的个人主页" # 中文页眉站点名；未使用中文姓名
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Fanglu Sun"
+description              : &description "Assistant Professor of International Studies at Xi'an Jiaotong-Liverpool University."
 url                      : "https://sunfanglu.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -26,22 +26,22 @@ author:
   name             : "Fanglu Sun"
   pronouns         :  "she/her"
   pronouns_zh      : "她"
-  bio              : "An assitant professor from Xi'an Jiaotong Livepool University (XJTLU)"
+  bio              : "Deputy Head and Assistant Professor, Department of International Studies, Xi'an Jiaotong-Liverpool University"
   bio_zh           : "西交利物浦大学（XJTLU）助理教授"
-  location         : "Shanghai"
-  location_zh      : "上海"
-  employer         : "XJTLU"
+  location         : "Suzhou"
+  location_zh      : "苏州"
+  employer         : "Xi'an Jiaotong-Liverpool University"
   employer_zh      : "西交利物浦大学"
-  uri              : # URL
+  uri              : "http://scholar.xjtlu.edu.cn/en/persons/FangluSun"
   email            : "Fanglu.Sun@xjtlu.edu.cn" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AERr9JHLImvBKO_oCutaTEtdytVI8Uw-7sVONVNwK_M5gQEex4xdmYMJMJkOh6vD7GKkqFXyViEJmBGiNXTbYg&user=9LArnEkAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # URL
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
 
@@ -49,12 +49,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : # Username
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -81,15 +81,21 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-    title_zh: '著作'
   manuscripts:
     title: 'Journal Articles'
     title_zh: '期刊论文'
-  conferences:
-    title: 'Conference Papers'
-    title_zh: '会议论文'
+  chapters:
+    title: 'Book Chapters'
+    title_zh: '书章'
+  reports:
+    title: 'Policy Reports'
+    title_zh: '政策报告'
+  translations:
+    title: 'Translations'
+    title_zh: '译著'
+  working:
+    title: 'Working Projects'
+    title_zh: '进行中的研究'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"

@@ -11,15 +11,22 @@
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: $x-large;
+  @include breakpoint($large) {
+    // 取消居中限宽，正文一直铺到浏览器右缘，只留一小段边距。
+    max-width: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
+    float: none;
+    width: auto;
+    margin-left: 290px;
+    margin-right: 32px;
   }
 
   .page__inner-wrap {

@@ -125,8 +125,9 @@ $x-large                    : 1800px;
 $small                      : 600px !default;
 $medium                     : 768px !default;
 $medium-wide                : 900px !default;
-$large                      : 925px !default;
-$x-large                    : 1280px !default;
+// 整页容器。原先 925px 会在普通笔记本上把正文挤得很窄。
+$large                      : 1280px;
+$x-large                    : 1600px;
 
 /*
    Grid

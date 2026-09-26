@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 title                    : "Fanglu Sun's Personal Page"
-title_zh                 : "Fanglu Sun 的个人主页" # 中文页眉站点名；未使用中文姓名
+title_zh                 : "孙芳露的个人主页" # 中文页眉站点名；未使用中文姓名
 title_separator          : "-"
 name                     : &name "Fanglu Sun"
 description              : &description "Assistant Professor of International Studies at Xi'an Jiaotong-Liverpool University."
@@ -24,8 +24,9 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Fanglu Sun"
+  name_zh          : "孙芳露"
   pronouns         :  "she/her"
-  pronouns_zh      : "她"
+  pronouns_zh      : "女"
   bio              : "Deputy Head and Assistant Professor, Department of International Studies, Xi'an Jiaotong-Liverpool University"
   bio_zh           : "西交利物浦大学（XJTLU）助理教授"
   location         : "Suzhou"

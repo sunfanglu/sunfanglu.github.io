@@ -34,6 +34,8 @@ author:
   employer         : "Xi'an Jiaotong-Liverpool University"
   employer_zh      : "西交利物浦大学"
   uri              : "http://scholar.xjtlu.edu.cn/en/persons/FangluSun"
+  # 侧栏“博客”链接，与个人笔记站同一地址
+  blog             : "https://sunfanglu.github.io/posts/"
   email            : "Fanglu.Sun@xjtlu.edu.cn" 
   blog            : "https://sunfanglu.github.io/posts/" 
 

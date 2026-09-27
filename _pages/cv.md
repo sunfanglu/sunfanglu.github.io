@@ -45,7 +45,7 @@ Visiting appointments
 
 Research interests
 ======
-Quantitative and big data methods, Chinese foreign policy analysis, the Global South, and international organizations.
+Quantitative and big data methods, Chinese foreign policy analysis, the Global South in international organizations.
 
 Grants and funding
 ======

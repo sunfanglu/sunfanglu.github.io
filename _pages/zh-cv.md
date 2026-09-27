@@ -13,10 +13,8 @@ lang_ref: cv
 ======
 * 职务：高级助理教授、副系主任
 * 系所：国际关系系，西交利物浦大学
-* 办公室：人文社科楼 325 室
+* 办公室：人文社科楼 405 室
 * 地址：江苏省苏州市独墅湖科教园区仁爱路 111 号
-* 电话：[+86 (21) 6564 7267](tel:+862165647267)
-* 手机：[+86 (136) 7171 2741](tel:+8613671712741)
 * 邮箱：[Fanglu.Sun@xjtlu.edu.cn](mailto:Fanglu.Sun@xjtlu.edu.cn)
 * 主页：[scholar.xjtlu.edu.cn/en/persons/FangluSun](http://scholar.xjtlu.edu.cn/en/persons/FangluSun)
 

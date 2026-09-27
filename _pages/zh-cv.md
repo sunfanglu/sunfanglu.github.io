@@ -57,7 +57,6 @@ lang_ref: cv
 
 外文发表
 ======
-* Sun, Fanglu. 2025. "Voices of the Global South. The Evolution of G77 Member's Solidarity in the United Nations General Assembly." *International Journal of Arts, Humanities and Social Sciences*.
 * Sun, Fanglu. 2021. "L'ascesa del populismo e il suo impatto sulle relazioni sino-europee (The Rise of Populism and Its Impacts on Sino-European Relations)." *OrizzonteCina* Quarterly: 22-31. 意大利文。
 * Sun, Fanglu. 2020. "U.S. Presidential Election Cycle and Remittance Transfers of Mexican Immigrants." *Chinese Political Science Review* 5(4): 30-45. SSCI。
 * Sun, Fanglu, with Steve Wood and Patricia Schneider. 2019. "China's Perspective on World and Regional Orders: Politics, Philosophy, Security." *Sicherheit und Frieden (Security and Peace)* 37(3): 139-157. 受 DAAD Strategic Partnerships China Fund 资助。SSCI。

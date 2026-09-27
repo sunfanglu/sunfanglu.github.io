@@ -1,13 +1,13 @@
 ---
-title: "Director, MA IR Program"
+title: "Department of International Studies"
 collection: "teaching"
-type: "Program directorship"
+type: "Deputy Head of Department"
 permalink: "/teaching/2023-mair-program"
-venue: "Department of International Studies, Xi'an Jiaotong-Liverpool University"
+venue: "Xi'an Jiaotong-Liverpool University"
 location: "Suzhou, China"
 date: 2023-12-01
 lang: "en"
-excerpt: "Director of the MA IR Program at Xi'an Jiaotong-Liverpool University, 2022-2023."
+excerpt: "Deputy HOD, Department of International Studies, Xi'an Jiaotong-Liverpool University, 2022-today."
 ---
 
-Director of the MA IR Program at Xi'an Jiaotong-Liverpool University, 2022-2023.
+Deputy HOD, Department of International Studies, Xi'an Jiaotong-Liverpool University, 2022-today

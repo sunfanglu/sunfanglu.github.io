@@ -18,8 +18,6 @@ Xi'an Jiaotong-Liverpool University (XJTLU)
 111 Ren'ai Road, Dushu Lake Science and Education Innovation District  
 Suzhou, Jiangsu Province, P. R. China, 215123
 
-* Phone: +86 (136) 7171 2741
-* Fax: +86 (21) 6564 7267
 * Email: [Fanglu.Sun@xjtlu.edu.cn](mailto:Fanglu.Sun@xjtlu.edu.cn)
 * Website: [scholar.xjtlu.edu.cn/en/persons/FangluSun](http://scholar.xjtlu.edu.cn/en/persons/FangluSun)
 

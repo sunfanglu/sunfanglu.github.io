@@ -7,16 +7,7 @@ lang: zh
 lang_ref: teaching
 ---
 
-{% include base_path %}
-
-{% assign teaching_here = site.teaching | where: "lang", "zh" %}
-{% if teaching_here.size == 0 %}
-  <p>（待填写）</p>
-{% endif %}
-
-{% for post in site.teaching reversed %}
-  {% assign item_lang = post.lang | default: "en" %}
-  {% if item_lang == page.lang %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
+<ul>
+  <li>项目主任，国际关系硕士，西交利物浦大学，2022-2023。</li>
+  <li>项目主任，巴黎政治学院-复旦“国际事务中的欧洲和亚洲”双硕项目，复旦大学，2017-2022。</li>
+</ul>

@@ -10,7 +10,7 @@
     {% if author.avatar contains "://" %}
     	<img src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{% if page.lang == 'zh' %}{{ author.name_zh | default: author.name }}{% else %}{{ author.name }}{% endif %}">
     {% endif %}
   </div>
 
@@ -28,8 +28,14 @@
     {% assign follow_text = "Follow" %}
   {% endif %}
 
+  {% if page.lang == "zh" %}
+    {% assign shown_name = author.name_zh | default: author.name %}
+  {% else %}
+    {% assign shown_name = author.name %}
+  {% endif %}
+
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">{{ shown_name }}</h3>
     {% if shown_pronouns %}<p class="author__pronouns">{{ shown_pronouns }}</p>{% endif %}
     {% if shown_bio %}<p class="author__bio">{{ shown_bio }}</p>{% endif %}
   </div>
